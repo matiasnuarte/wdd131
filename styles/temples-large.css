@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+    
+    #main-nav {
+        display: flex;
+        width: auto;
+        margin-top: 0;
+        flex-direction: row;
+    }
+    
+    #main-nav a {
+        border-bottom: none;
+        border-right: 1px solid #34495e;
+        padding: 0.5rem 1rem;
+    }
+    
+    #main-nav a:last-child {
+        border-right: none;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    header {
+        flex-wrap: nowrap;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
