@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Matias Nuarte" />
+  <meta name="description" content="Discover the beauty of Bariloche, a stunning destination known for its breathtaking landscapes, outdoor adventures, and vibrant culture." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)" />
+  <script src="scripts/place.js" defer></script>
+  <title>Bariloche – WDD 131</title>
+</head>
+<body>
+  <header>
+    <h1>Bariloche</h1>
+  </header>
+  <main class="grid-container">
+    <section class="hero">
+      <picture>
+        <source srcset="images/bariloche_1.webp" media="(min-width: 768px)" />
+        <source srcset="images/bariloche_2.webp" media="(max-width: 767px)" />
+        <img src="images/bariloche_2.webp" alt="Scenic view of Bariloche" />
+      </picture>
+    </section>
+    <section class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> 2,600 sq km</p>
+      <p><strong>Population:</strong> ~130,000</p>
+      <p><strong>Province:</strong> Río Negro</p>
+      <p><strong>Languages:</strong> Spanish</p>
+      <p><strong>Currency:</strong> Argentine Peso (ARS)</p>
+      <p><strong>Time Zone:</strong> UTC−3</p>
+      <p><strong>Calling Code:</strong> +54 294</p>
+      <p><strong>Internet TLD:</strong> .ar</p>
+    </section>
+    <section class="weather">
+      <h2>Weather <span class="desktop-icon">⛅</span></h2>
+      <img src="images/weather.svg" alt="Weather icon" class="mobile-icon" />
+      <p><strong>Temperature:</strong> <span id="temp">12</span>°C</p>
+      <p><strong>Conditions:</strong> Sunny</p>
+      <p><strong>Wind:</strong> <span id="wind">8</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill">--</span>°C</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Matias Nuarte – Mendoza, Argentina</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.grid-container {
+  position: relative;
+  padding: 0;
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: clamp(50vh, 70vh, 80vh);
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.hero {
+  display: block;
+}
+
+.data,
+.weather {
+  position: absolute;
+  background-color: rgba(255,255,255,0.95);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  max-width: 360px;
+  width: clamp(240px, 22vw, 360px);
+  z-index: 5;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.data {
+  left: clamp(1rem, 3vw, 2rem);
+  top: clamp(1rem, 6vh, 4rem);
+}
+
+.weather {
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 4vh, 2.5rem);
+}
+
+.data h2,
+.weather h2 {
+  margin: 0 0 0.5rem 0;
+  padding: 0.6rem 0.9rem;
+  background: var(--accent-green);
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1.15rem;
+}
+
+.desktop-icon {
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+.mobile-icon {
+  display: none;
+}
+
+.data p,
+.weather p {
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+footer {
+  margin-top: 0;
+}
