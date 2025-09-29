@@ -85,12 +85,6 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
-  }
-
   .desktop-icon {
     display: inline-block;
   }
@@ -99,11 +93,12 @@ footer p {
     display: none;
   }
 
-  section {
-    margin-bottom: 0;
-  }
-
   header h1 {
     font-size: 3rem;
   }
+
+  body {
+    background-color: #fff;
+  }
 }
+
